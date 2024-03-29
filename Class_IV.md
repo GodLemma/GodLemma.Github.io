@@ -4,6 +4,6 @@
   - bridge amplification: library preparation(construct adaptor) and sequencing on a machine 
   - molecular
 
-- tyoes of NGS
+- types of NGS
   - target sequencing: hybrid(large region) or anplicon(small region)
   - 
