@@ -13,13 +13,14 @@
 **code:**
 ```R
 library(ggpolt2) %导入ggpolt2包
-ggplot(iris,aes(x=Species,y=Sepal.Length,fill=Species)) %创建图表
-+ labs(title="Sepal Length Distribution",x="Species",y="Sepal.Length") %设置图表标题内容
-+ geom_violin() %绘制violin图
-+ theme(plot.title = element_text(hjust = 0.5,face = "bold")) %设置标题格式加粗居中
-+ scale_fill_manual(,"Species",values = c("#C44E52", "#55A868","#4C72B0")) %设置图表填充颜色
-+ scale_y_continuous(breaks=seq(0.5,7,by = 0.5))  %设置y轴范围
+ggplot(iris,aes(x=Species,y=Sepal.Length,fill=Species)) #创建图表
++ labs(title="Sepal Length Distribution",x="Species",y="Sepal.Length") #设置图表标题内容
++ geom_violin() #绘制violin图
++ theme(plot.title = element_text(hjust = 0.5,face = "bold")) #设置标题格式加粗居中
++ scale_fill_manual(,"Species",values = c("#C44E52", "#55A868","#4C72B0")) #设置图表填充颜色
++ scale_y_continuous(breaks=seq(0.5,7,by = 0.5),limits = c(0.5,7))  #设置y轴范围
 ```
 
 **result：**
-![image](https://github.com/GodLemma/Bioinformatics/assets/162097106/653fe643-926c-4e06-9c61-d8894d6142ed)
+![image](https://github.com/GodLemma/Bioinformatics/assets/162097106/adafb664-b116-4728-ab5b-b4718329d8d3)
+
