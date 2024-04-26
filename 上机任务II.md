@@ -12,7 +12,7 @@
 
 **code:**
 ```R
-library(ggpolt2) %导入ggpolt2包
+library(ggpolt2) #导入ggpolt2包
 ggplot(iris,aes(x=Species,y=Sepal.Length,fill=Species)) #创建图表
 + labs(title="Sepal Length Distribution",x="Species",y="Sepal.Length") #设置图表标题内容
 + geom_violin() #绘制violin图
